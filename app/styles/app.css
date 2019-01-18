@@ -1,0 +1,15 @@
+.header{
+    text-align: center;
+}
+.menu-container{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.menu-item:not(:last-child){
+    margin-right: 2%;
+}
+.menu-item img{
+    width:350px;
+}
