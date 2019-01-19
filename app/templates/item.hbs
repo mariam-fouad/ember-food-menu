@@ -2,5 +2,7 @@
 <img src="{{model.img}}" alt="{{model.name}}" width="50%">
 <p>Rating :{{model.rating}}</p>
 <p>{{model.description}}</p>
-<p><a href="/item/{{model.id}}/calories">Calories</a></p>
+<p>
+    {{#link-to 'item.calories' }}Calories{{/link-to}}
+</p>
 {{outlet}}

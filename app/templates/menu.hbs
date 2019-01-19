@@ -2,7 +2,7 @@
 <ul class="menu-container">
     {{#each model as |item|}}
     <li class="menu-item">
-        <a href="/item/{{item.id}}"><h2>{{item.name}}</h2></a>
+        {{#link-to 'item' item.id}}{{item.name}}{{/link-to}}
         <img src='{{item.img}}' alt="steak">
     </li>
     {{/each}}
