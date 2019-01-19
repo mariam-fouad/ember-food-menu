@@ -1,0 +1,8 @@
+{
+    "id":"steak",
+    "name":"Steak",
+    "img":"/images/steak.jpg",
+    "rating":4.3,
+    "description":"Tender Steak with some vegs",
+    "calories":"500Kcal"
+}

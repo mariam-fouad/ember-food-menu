@@ -1,0 +1,8 @@
+{
+    "id":"falafel",
+    "name":"Falafel",
+    "img":"/images/falafel.jpg",
+    "rating":5,
+    "description":"Warm Falafel with Humas",
+    "calories":"300Kcal"
+}
