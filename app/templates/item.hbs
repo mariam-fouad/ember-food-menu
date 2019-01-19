@@ -1,6 +1,6 @@
-<h2>Steak</h2>
-<img src="/images/steak.jpg" alt="steak" width="50%">
-<p>Rating : 4.3</p>
-<p>Tender Steak with some vegs</p>
-<p><a href="/item/stek/calories">Calories</a></p>
+<h2>{{model.name}}</h2>
+<img src="{{model.img}}" alt="{{model.name}}" width="50%">
+<p>Rating :{{model.rating}}</p>
+<p>{{model.description}}</p>
+<p><a href="/item/{{model.id}}/calories">Calories</a></p>
 {{outlet}}
