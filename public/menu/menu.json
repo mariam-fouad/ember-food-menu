@@ -1,0 +1,26 @@
+[
+    {
+        "id":"steak",
+        "name":"Steak",
+        "img":"/images/steak.jpg",
+        "rating":4.3,
+        "description":"Tender Steak with some vegs",
+        "calories":"500Kcal"
+    },
+    {
+        "id":"falafel",
+        "name":"Falafel",
+        "img":"/images/falafel.jpg",
+        "rating":5,
+        "description":"Warm Falafel with Humas",
+        "calories":"300Kcal"
+    },
+    {
+        "id":"waffels",
+        "name":"Waffels",
+        "img":"/images/waffels.jpg",
+        "rating":4.8,
+        "description":"Hot thick waffels with maple syrup",
+        "calories":"409Kcal"
+    }
+]
