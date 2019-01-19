@@ -1,16 +1,10 @@
 <h1 class="header">Food is Bae :*</h1>
 <ul class="menu-container">
+    {{#each model as |item|}}
     <li class="menu-item">
-        <a href="/item/steak"><h2>Steak</h2></a>
-        <img src="/images/steak.jpg" alt="steak">
+        <a href="/item/{{item.id}}"><h2>{{item.name}}</h2></a>
+        <img src='{{item.img}}' alt="steak">
     </li>
-    <li class="menu-item">
-        <a href="/item/falafel"><h2>Falafel</h2></a>
-        <img src="/images/falafel.jpg" alt="falafel">
-    </li>
-    <li class="menu-item">
-        <a href="/item/waffels"><h2>Waffels</h2></a>
-        <img src="/images/waffels.jpg" alt="waffel">
-    </li>
+    {{/each}}
 </ul>
 {{outlet}}
