@@ -12,4 +12,9 @@
 }
 .menu-item img{
     width:350px;
+    display: flex;
+}
+
+.order-tracker{
+    text-align: center;
 }
