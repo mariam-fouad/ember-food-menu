@@ -1,4 +1,19 @@
 <div class="order-tracker">
     Select food for {{orderManger.activeDay}}
+    <div class="order-table">
+        {{#each-in orderManger.menuSelection as |day menuOrder| }}
+            <div>
+                {{day}}
+                <dl>
+                    <dt>Breakfast</dt>
+                    <dd>{{menuOrder.breakfast}}</dd>
+                    <dt>Lunch</dt>
+                    <dd>{{menuOrder.lunch}}</dd>
+                    <dt>Dinner</dt>
+                    <dd>{{menuOrder.dinner}}</dd>
+                </dl>
+            </div>
+        {{/each-in}}
+    </div>
 </div>
 {{yield}}

@@ -18,3 +18,9 @@
 .order-tracker{
     text-align: center;
 }
+
+.order-table{
+    margin-top: 3%;
+    display:flex;
+    justify-content: space-around;
+}
