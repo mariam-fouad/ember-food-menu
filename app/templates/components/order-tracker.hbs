@@ -2,7 +2,7 @@
     Select food for {{orderManger.activeDay}}
     <div class="order-table">
         {{#each-in orderManger.menuSelection as |day menuOrder| }}
-            <div>
+            <div {{action 'setActiveDay' day}}>
                 {{day}}
                 <dl>
                     <dt>Breakfast</dt>

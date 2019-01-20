@@ -6,6 +6,9 @@ export default Component.extend({
     actions:{
         resetItem(day,meal){
             this.get('orderManger').resetMenuMeal(day,meal);
+        },
+        setActiveDay(day){
+            this.get('orderManger').setActiveDay(day);
         }
     }
 });
