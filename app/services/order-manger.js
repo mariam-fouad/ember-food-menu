@@ -15,10 +15,10 @@ export default Service.extend({
     },
 
     setMenuMeal(meal,menuItem){
-        this.set('menuSelection'+this.get('activeDay')+'.'+meal,menuItem);
+        this.set('menuSelection.'+this.get('activeDay')+'.'+meal,menuItem);
     },
-    setMenuMeal(day,meal){
-        this.set('menuSelection'+day+'.'+meal,'');
+    resetMenuMeal(day,meal){
+        this.set('menuSelection.'+day+'.'+meal,'');
     },
 
 });

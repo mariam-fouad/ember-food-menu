@@ -1,3 +1,9 @@
 {{#link-to 'item' item-data.id}}{{item-data.name}}{{/link-to}}
 <img src='{{item-data.img}}' alt="steak">
+<select onchange={{action 'cahngeMeal' value="target.value"}}>
+    <option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="dinner">Dinner</option>
+</select>
+<button {{action 'choosetem' item-data.name}}>Select Meal</button>
 {{yield}}
