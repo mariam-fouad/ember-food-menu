@@ -6,11 +6,22 @@
                 {{day}}
                 <dl>
                     <dt>Breakfast</dt>
-                    <dd>{{menuOrder.breakfast}}</dd>
+                    <dd>
+                        {{#if menuOrder.breakfast}}
+                          {{menuOrder.breakfast}} <span {{action 'resetItem' day 'breakfast'}} > × </span>
+                        {{/if}}
+                        </dd>
                     <dt>Lunch</dt>
-                    <dd>{{menuOrder.lunch}}</dd>
+                    <dd>
+                        {{#if menuOrder.lunch}}
+                            {{menuOrder.lunch}} <span {{action 'resetItem' day 'lunch'}} > × </span>
+                        {{/if}}
+                        </dd>
                     <dt>Dinner</dt>
-                    <dd>{{menuOrder.dinner}}</dd>
+                    <dd>
+                        {{#if menuOrder.dinner}}
+                         {{menuOrder.dinner}} <span {{action 'resetItem' day 'dinner'}} > × </span>
+                        {{/if}}</dd>
                 </dl>
             </div>
         {{/each-in}}
